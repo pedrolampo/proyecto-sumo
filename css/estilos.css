@@ -982,6 +982,7 @@ section#tienda .item div.card-body .btnComprar {
   }
   #tienda .productos .item {
     margin: 0;
+    margin-left: -6%;
   }
   /** Contacto **/
   .form {
