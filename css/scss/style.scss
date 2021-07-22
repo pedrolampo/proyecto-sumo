@@ -909,6 +909,30 @@ section#tienda{
         top: 0;
     }
 
+    /** Historia **/
+    #historia{
+        div.row{
+            display: block;
+
+            .titulos-1{
+                line-height: 5rem;
+            }
+
+            .titulos-2{
+                text-align: center;
+                padding-top: 3rem;
+            }
+
+            div{
+                width: 100%;
+
+                img{
+                    padding: 0 7rem 0;
+                }
+            }
+        }
+    }
+
     /** Productos **/
     div.productos{
         width: 90%;
@@ -1016,14 +1040,21 @@ section#tienda{
         }
     }
 
-    .videos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
-        justify-items: center;
+    #videos{
+        #tituloVideos{
+            font-size: 2rem;
+            margin: 0 .5rem 0;
+        }
 
-        div{
-            width: 80%;
+        .videos{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,1fr);
+            justify-items: center;
+    
+            div{
+                width: 80%;
+            }
         }
     }
 
@@ -1091,8 +1122,27 @@ section#tienda{
     }
 
     /** Historia **/
-    .titulos{
-        line-height: 2.5rem;
+    #historia{
+        div.row{
+            display: block;
+
+            .titulos-1{
+                line-height: 5rem;
+            }
+
+            .titulos-2{
+                text-align: center;
+                padding-top: 3rem;
+            }
+
+            div{
+                width: 100%;
+
+                img{
+                    padding: 0;
+                }
+            }
+        }
     }
 
     /** Productos **/
@@ -1100,6 +1150,7 @@ section#tienda{
         display: none;
     }
 
+    /** Productos **/
     #tienda{
         .productos{
             width: 90%;
@@ -1107,7 +1158,7 @@ section#tienda{
 
             .item{
                 margin: 0;
-                margin-left: -6%;
+                margin-left: -8%;
             }
         }
     }
@@ -1117,5 +1168,19 @@ section#tienda{
         width: 94%;
         margin-left: 3%;
         margin-right: 3%;
+    }
+
+    /** Carrito **/
+    #carrito{
+        div.carrito{
+            h2{
+                font-size: 3rem;
+            }
+            div{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }
