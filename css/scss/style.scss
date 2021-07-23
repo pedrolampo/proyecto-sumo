@@ -75,12 +75,19 @@ nav{
                 }
 
                 #subMenu{
-                    
-                    ul{
+                    position: relative;
+
+                    ul.subMenu{
                         background-color: $negro;
                         color: $blanco;
-                        margin-left: 1.5em;
                         font-size: .75em;
+                        position: absolute;
+                        display: none;
+                        padding: 0 0 .5rem 0;
+
+                        li{
+                            display: block;
+                        }
             
                         a{
                             color: $blanco;
@@ -91,6 +98,12 @@ nav{
                             background-color: rgb(31, 31, 31);
                             color: $rojo;
                         }
+                    }
+                }
+
+                #subMenu:hover{
+                    ul{
+                        display: block;
                     }
                 }
             }

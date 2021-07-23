@@ -51,17 +51,25 @@ nav {
           color: white; }
         nav div.container-fluid div.navegacion ul.navbar-nav li.nav-item .navButton:hover {
           color: red; }
-      nav div.container-fluid div.navegacion ul.navbar-nav #subMenu ul {
-        background-color: black;
-        color: white;
-        margin-left: 1.5em;
-        font-size: .75em; }
-        nav div.container-fluid div.navegacion ul.navbar-nav #subMenu ul a {
+      nav div.container-fluid div.navegacion ul.navbar-nav #subMenu {
+        position: relative; }
+        nav div.container-fluid div.navegacion ul.navbar-nav #subMenu ul.subMenu {
+          background-color: black;
           color: white;
-          transition: all .1s ease-in-out; }
-        nav div.container-fluid div.navegacion ul.navbar-nav #subMenu ul a:hover {
-          background-color: #1f1f1f;
-          color: red; }
+          font-size: .75em;
+          position: absolute;
+          display: none;
+          padding: 0 0 .5rem 0; }
+          nav div.container-fluid div.navegacion ul.navbar-nav #subMenu ul.subMenu li {
+            display: block; }
+          nav div.container-fluid div.navegacion ul.navbar-nav #subMenu ul.subMenu a {
+            color: white;
+            transition: all .1s ease-in-out; }
+          nav div.container-fluid div.navegacion ul.navbar-nav #subMenu ul.subMenu a:hover {
+            background-color: #1f1f1f;
+            color: red; }
+      nav div.container-fluid div.navegacion ul.navbar-nav #subMenu:hover ul {
+        display: block; }
 
 /**** Portada ****/
 .banner {
