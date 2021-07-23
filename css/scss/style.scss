@@ -815,6 +815,21 @@ section#tienda{
     nav{
         width: 100vw;
         height: auto;
+
+        div.container-fluid{
+            
+            div.navegacion{
+    
+                ul.navbar-nav{
+                    
+                    #subMenu:hover{
+                        ul{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .banner{

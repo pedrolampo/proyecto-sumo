@@ -549,6 +549,8 @@ section#tienda .item {
   nav {
     width: 100vw;
     height: auto; }
+    nav div.container-fluid div.navegacion ul.navbar-nav #subMenu:hover ul {
+      display: none; }
   .banner {
     margin: 0; }
   /** Index **/
