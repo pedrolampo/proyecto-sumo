@@ -436,7 +436,7 @@ nav{
 
 #discografia{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr 2fr;
 
     /** Discografía - Menú Discos **/
 
@@ -513,6 +513,18 @@ nav{
         a:hover{
             color: $rojo;
             text-decoration: underline;
+        }
+    }
+
+    #portadas{
+        padding-top: 3rem;
+
+        div{
+
+            img{
+                width: 80%;
+                padding: 4rem 2rem 3rem;
+            }
         }
     }
 }

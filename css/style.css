@@ -305,7 +305,7 @@ nav {
 /**** Discografía ****/
 #discografia {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr 2fr;
   /** Discografía - Menú Discos **/
   /** Discografía - Lista de Canciones **/ }
   #discografia .discMenu {
@@ -356,6 +356,11 @@ nav {
     #discografia #songLists a:hover {
       color: red;
       text-decoration: underline; }
+  #discografia #portadas {
+    padding-top: 3rem; }
+    #discografia #portadas div img {
+      width: 80%;
+      padding: 4rem 2rem 3rem; }
 
 /**** Historia ****/
 #historia {
