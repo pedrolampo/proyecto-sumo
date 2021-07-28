@@ -476,7 +476,7 @@ section#tienda .item {
     #carrito div.carrito div p.textoCarrito a {
       color: white; }
 
-/**** Desktop Small ****/
+/**** Laptop ****/
 @media screen and (max-width: 1500px) {
   html {
     width: 100%;
@@ -535,6 +535,10 @@ section#tienda .item {
     width: 20rem; }
     #discografia .discMenu .discTitle {
       font-size: 3rem; }
+  #discografia #portadas {
+    padding-top: 10rem; }
+    #discografia #portadas div img {
+      padding: 7rem 0 5rem; }
   /** Productos **/
   #tienda .productos {
     width: 90%;
@@ -613,13 +617,18 @@ section#tienda .item {
         #integrantes .miembros div .wikipedia {
           padding-top: 3rem; }
   /** Discografia **/
-  .discMenu {
-    padding-left: 4rem;
-    width: 20em; }
-  .menuPos {
-    position: relative;
-    padding: 0;
-    top: 0; }
+  #discografia {
+    display: grid;
+    grid-template-columns: 1fr 4fr; }
+    #discografia .discMenu {
+      padding-left: 4rem;
+      width: 20em; }
+      #discografia .discMenu .menuPos {
+        position: relative;
+        padding: 0;
+        top: 0; }
+    #discografia #portadas {
+      display: none; }
   /** Historia **/
   #historia div.row {
     display: block; }

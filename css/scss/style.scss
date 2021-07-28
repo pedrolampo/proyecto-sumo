@@ -689,7 +689,7 @@ section#tienda{
     }
 }
 
-/**** Desktop Small ****/
+/**** Laptop ****/
 
 @media screen and (max-width: 1500px) {
 
@@ -792,6 +792,15 @@ section#tienda{
 
             .discTitle{
                 font-size: 3rem;
+            }
+        }
+
+        #portadas{
+            padding-top: 10rem;
+            div{
+                img{
+                    padding: 7rem 0 5rem;
+                }
             }
         }
     }
@@ -938,15 +947,24 @@ section#tienda{
     }
 
     /** Discografia **/
-    .discMenu{
-        padding-left: 4rem;
-        width: 20em;
-    }
+    #discografia{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
 
-    .menuPos{
-        position: relative;
-        padding: 0;
-        top: 0;
+        .discMenu{
+            padding-left: 4rem;
+            width: 20em;
+
+            .menuPos{
+                position: relative;
+                padding: 0;
+                top: 0;
+            }
+        }
+
+        #portadas{
+            display: none;
+        }
     }
 
     /** Historia **/
