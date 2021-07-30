@@ -5,4 +5,4 @@ Esta página se creó como el proyecto final del curso de Desarrollo Web en Code
 
 Tema elegido: Sumo, banda de rock argentino de los 80.
 
-*Todos las branches fueron creadas y "mergeadas" de forma local con Git.
+*Nota: Todas las branches fueron creadas y "mergeadas" de forma local con Git.
