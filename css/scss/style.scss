@@ -370,7 +370,6 @@ nav{
     
         img{
             width: 23em;
-            height: 15em;
             grid-area: foto;
         }
     
@@ -937,6 +936,7 @@ section#tienda{
 
                 p{
                     text-align: justify;
+                    font-size: 1.2rem;
                 }
 
                 .wikipedia{
@@ -992,9 +992,29 @@ section#tienda{
     }
 
     /** Productos **/
-    div.productos{
+    #tienda{
         width: 90%;
-        padding-left: 15%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        div.productos{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            padding: 0;
+            margin: 0;
+
+            div.col{
+                padding: 0 0 3rem;
+                margin: 0;
+
+                div.item{
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+        }
     }
 
     /** Contacto **/
@@ -1204,19 +1224,31 @@ section#tienda{
     }
 
     /** Productos **/
-    section #carouselExampleSlidesOnly{
-        display: none;
-    }
-
-    /** Productos **/
     #tienda{
-        .productos{
-            width: 90%;
-            padding: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
 
-            .item{
+        #carouselExampleSlidesOnly{
+            display: none;
+        }
+
+        div.productos{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            padding: 0;
+            margin: 0;
+
+            div.col{
+                padding: 0 0 3rem;
                 margin: 0;
-                margin-left: -8%;
+
+                div.item{
+                    margin: 0 auto;
+                    padding: 0;
+                }
             }
         }
     }

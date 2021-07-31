@@ -258,7 +258,6 @@ nav {
     grid-template-rows: repeat(3, 1fr); }
     #integrantes .miembros img {
       width: 23em;
-      height: 15em;
       grid-area: foto; }
     #integrantes .miembros div {
       display: grid;
@@ -613,7 +612,8 @@ section#tienda .item {
           margin: 0;
           padding: 0 0 1rem; }
         #integrantes .miembros div p {
-          text-align: justify; }
+          text-align: justify;
+          font-size: 1.2rem; }
         #integrantes .miembros div .wikipedia {
           padding-top: 3rem; }
   /** Discografia **/
@@ -642,9 +642,23 @@ section#tienda .item {
       #historia div.row div img {
         padding: 0 7rem 0; }
   /** Productos **/
-  div.productos {
+  #tienda {
     width: 90%;
-    padding-left: 15%; }
+    margin-left: 5%;
+    margin-right: 5%; }
+    #tienda div.productos {
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      padding: 0;
+      margin: 0; }
+      #tienda div.productos div.col {
+        padding: 0 0 3rem;
+        margin: 0; }
+        #tienda div.productos div.col div.item {
+          margin: 0 auto;
+          padding: 0; }
   /** Contacto **/
   .form {
     width: 90%;
@@ -768,15 +782,25 @@ section#tienda .item {
       #historia div.row div img {
         padding: 0; }
   /** Productos **/
-  section #carouselExampleSlidesOnly {
-    display: none; }
-  /** Productos **/
-  #tienda .productos {
+  #tienda {
     width: 90%;
-    padding: 0; }
-    #tienda .productos .item {
-      margin: 0;
-      margin-left: -8%; }
+    margin-left: 5%;
+    margin-right: 5%; }
+    #tienda #carouselExampleSlidesOnly {
+      display: none; }
+    #tienda div.productos {
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      padding: 0;
+      margin: 0; }
+      #tienda div.productos div.col {
+        padding: 0 0 3rem;
+        margin: 0; }
+        #tienda div.productos div.col div.item {
+          margin: 0 auto;
+          padding: 0; }
   /** Contacto **/
   .form {
     width: 94%;
